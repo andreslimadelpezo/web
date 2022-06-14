@@ -38,7 +38,7 @@
 </head>
 <body>
 
-	<h1><center>Menú Principal</center></h1>
+	<h1><center>Menú Principal WEB</center></h1>
 
 	<div align="center"><img src="hijo.png"  width="350" height="350" ></div><br>
 
