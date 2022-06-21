@@ -29,14 +29,9 @@ $consulta=$Estudiantes->listar_estudiantes();
 			width:20px;
 		}
 		h1{
-			background:#23B0CC;
+			background-color:#23B0CC;
 			color:#fff;
-			padding:3px	;
-			border-radius:8px;
-			box-shadow:5px 5px 10px black;
-			font-size:40px;
 			font-family:Britannic Bold;
-			text-align:center; 
 		}
 		.volver{
 			background:#23B0CC;
@@ -54,7 +49,8 @@ $consulta=$Estudiantes->listar_estudiantes();
 	</style>
 </head>
 <body>
-	<h1><center>Lista Estudiantes</center></h1>
+	<h1><center>Lista Estudiantes Lima Diego</center></h1>
+	<a href ='formulario_estudiantes.php'> Nuevo estudiante</a>
 	<table align="center">
 		
 		 <tr> 
@@ -62,7 +58,9 @@ $consulta=$Estudiantes->listar_estudiantes();
 			<th>NOMBRES	</th>
 			<th>APELLIDOS</th>
 			<th>EDAD</th>
-			<th>ENFERMADAD</th>
+			<th>CIUDAD</th>
+			<th>CEDULA</th>
+			<th>GENERO</th>
 			<th>ACCIONES</th>
 
 		</tr>
@@ -73,17 +71,18 @@ $consulta=$Estudiantes->listar_estudiantes();
   			$x++;
   	echo "<tr>
   			<td>$x</td>
-  			<td>{$c['est_nombre']}</td>
-  			<td>{$c['est_apellido']}</td>
+  			<td>{$c['est_nombres']}</td>
+  			<td>{$c['est_apellidos']}</td>
   			<td>{$c['est_edad']}</td>
-  			<td>{$c['est_enfermedad']}</td>
+  			<td>{$c['est_ciudad']}</td>
+  			<td>{$c['est_cedula']}</td>
+  			<td>{$c['est_genero']}</td>
   			<td>
-  			 <a href=''>
+  			 <a href=''></a>
   					<img src='edit.png'/>
-  					</a>
-  				<a href=''>
+  				<a href=''></a>
   				<img src='delete.png'/>
-  			  	</a>
+  			  
   			</td>
   		</tr>";	
   }
