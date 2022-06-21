@@ -8,7 +8,7 @@ $consulta=$Estudiantes->listar_estudiantes();
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Lista de estudiantes</title>
+	<title>Lista de estudiantes lima</title>
 	<style >
 		th{
 			padding:3px	;
