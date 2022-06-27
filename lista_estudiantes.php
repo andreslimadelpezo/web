@@ -40,17 +40,24 @@ $consulta=$Estudiantes->listar_estudiantes();
 			border-radius:8px;
 			box-shadow:5px 5px 10px black;
 			font-size:20px;
+			text-decoration:none; 
+		}
+		.nuevo{
+			background:#23B0CC;
+			color:#fff; 
+			padding:5px;
+			border-radius:5px;
+			box-shadow:5px 5px 10px black;
+			font-size:15px;
 			text-decoration:none;
-			
-
-
+ 
 		}
 
 	</style>
 </head>
 <body>
 	<h1><center>Lista Estudiantes Lima Diego</center></h1>
-	<a href ='formulario_estudiantes.php'> Nuevo estudiante</a>
+	<a class="nuevo" href ='formulario_estudiantes.php'> Nuevo estudiante</a>
 	<table align="center">
 		
 		 <tr> 
@@ -78,11 +85,13 @@ $consulta=$Estudiantes->listar_estudiantes();
   			<td>{$c['est_cedula']}</td>
   			<td>{$c['est_genero']}</td>
   			<td>
-  			 <a href=''></a>
+  			 <a href='formulario_estudiantes.php?est_id={$c["est_id"]}'>
   					<img src='edit.png'/>
-  				<a href=''></a>
+  					</a>
+
+  				<a href=''>
   				<img src='delete.png'/>
-  			  
+  			   </a>
   			</td>
   		</tr>";	
   }
