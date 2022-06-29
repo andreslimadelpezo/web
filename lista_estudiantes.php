@@ -89,7 +89,7 @@ $consulta=$Estudiantes->listar_estudiantes();
   					<img src='edit.png'/>
   					</a>
 
-  				<a href=''>
+  				<a href='acciones_estudiantes.php?est_id={$c["est_id"]}' onclick='return validar()'>
   				<img src='delete.png'/>
   			   </a>
   			</td>
@@ -100,3 +100,12 @@ $consulta=$Estudiantes->listar_estudiantes();
 </body>
 <a class="volver" href="index.php">Volver</a>
 </html>
+<script>
+function validar(){
+if(confirm("¿Está segura de elimar el estudiante?")){
+	}
+}
+
+
+
+</script>
