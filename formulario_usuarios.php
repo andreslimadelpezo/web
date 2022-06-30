@@ -44,6 +44,11 @@ if(isset($_GET['usu_id'])){
             border:solid 1px #ccc;
 
         }
+        div{
+          
+
+
+        }
     </style>
 </head>
 <body>
